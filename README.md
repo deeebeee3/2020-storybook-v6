@@ -11,3 +11,7 @@ Made change in preview.js? Need to restart server.
 
 Chakra UI:
 https://chakra-ui.com/getting-started
+
+don't use npm install chakra instead use yarn...
+
+yarn add @chakra-ui/core @emotion/core @emotion/styled emotion-theming
