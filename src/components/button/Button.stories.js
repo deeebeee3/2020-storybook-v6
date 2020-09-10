@@ -3,7 +3,7 @@ import Button from "./Button";
 
 //adds entry in side map
 export default {
-  title: "Button",
+  title: "Form/Button",
   component: Button,
 };
 
