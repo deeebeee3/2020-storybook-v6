@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./Button";
-import Center from "../Center/Center";
 
 //adds entry in side map
 export default {
@@ -9,7 +8,6 @@ export default {
   args: {
     children: "Setting args at Component Level",
   },
-  decorators: [(story) => <Center>{story()}</Center>],
 };
 
 //renders actual components
@@ -23,17 +21,17 @@ const Template = (args) => <Button {...args} />;
 export const PrimaryA = Template.bind({});
 PrimaryA.args = {
   variant: "primary",
-  //children: "Primary Args",
+  /* children: "Primary Args", */
 };
 
 export const SecondaryA = Template.bind({});
 SecondaryA.args = {
   variant: "secondary",
-  //children: <div>Secondary Args</div>,
+  /* children: <div>Secondary Args</div>, */
 };
 
 export const LongPrimaryA = Template.bind({});
 LongPrimaryA.args = {
   ...PrimaryA.args,
-  //children: "Long Primary Args",
+  /* children: "Long Primary Args", */
 };
