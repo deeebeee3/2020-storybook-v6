@@ -5,6 +5,9 @@ import Button from "./Button";
 export default {
   title: "Form/Control/Button",
   component: Button,
+  args: {
+    children: "Setting args at Component Level",
+  },
 };
 
 //renders actual components
@@ -18,17 +21,17 @@ const Template = (args) => <Button {...args} />;
 export const PrimaryA = Template.bind({});
 PrimaryA.args = {
   variant: "primary",
-  children: "Primary Args",
+  //children: "Primary Args",
 };
 
 export const SecondaryA = Template.bind({});
 SecondaryA.args = {
   variant: "secondary",
-  children: <div>Secondary Args</div>,
+  //children: <div>Secondary Args</div>,
 };
 
 export const LongPrimaryA = Template.bind({});
 LongPrimaryA.args = {
   ...PrimaryA.args,
-  children: "Long Primary Args",
+  //children: "Long Primary Args",
 };
