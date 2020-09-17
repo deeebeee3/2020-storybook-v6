@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@chakra-ui/core";
+import { action, actions } from "@storybook/addon-actions";
 
 export default {
   title: "ChakraButton",
@@ -17,6 +18,7 @@ export const Success = Template.bind({});
 Success.args = {
   variantColor: "green",
   children: "Success",
+  onClick: action("Click handler"),
 };
 
 // export const Danger = () => <Button variantColor="red">Danger</Button>;
@@ -25,4 +27,5 @@ export const Danger = Template.bind({});
 Danger.args = {
   variantColor: "red",
   children: "Danger",
+  ...actions("onClick", "onMouseOver"),
 };
