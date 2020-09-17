@@ -32,7 +32,10 @@ Danger.args = {
 };
 
 export const Log = () => (
-  <Button variantColor="blue" onClick={() => console.log("Button Clicked")}>
+  <Button
+    variantColor="blue"
+    onClick={() => console.log("Button Clicked", process.env.STORYBOOK_THEME)}
+  >
     Log
   </Button>
 );
