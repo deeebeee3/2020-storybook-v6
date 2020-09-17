@@ -29,3 +29,9 @@ Danger.args = {
   children: "Danger",
   ...actions("onClick", "onMouseOver"),
 };
+
+export const Log = () => (
+  <Button variantColor="blue" onClick={() => console.log("Button Clicked")}>
+    Log
+  </Button>
+);

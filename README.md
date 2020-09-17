@@ -15,3 +15,6 @@ https://chakra-ui.com/getting-started
 don't use npm install chakra instead use yarn...
 
 yarn add @chakra-ui/core @emotion/core @emotion/styled emotion-theming
+
+Console addon:
+yarn add -D @storybook/addon-console

@@ -2,6 +2,7 @@ import React from "react";
 import { addDecorator } from "@storybook/react";
 import Center from "../src/components/Center/Center";
 import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/core";
+import { withConsole } from "@storybook/addon-console";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -32,4 +33,5 @@ export const decorators = [
     </ThemeProvider>
   ),
   (Story) => <Center>{Story()}</Center>,
+  (Story, context) => withConsole()(Story)(context),
 ];
