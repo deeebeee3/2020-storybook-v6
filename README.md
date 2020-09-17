@@ -21,3 +21,6 @@ yarn add -D @storybook/addon-console
 
 Docs addon:
 yarn add -D @storybook/addon-docs
+
+Viewport addon:
+yarn add -D @storybook/addon-viewport
