@@ -13,8 +13,15 @@ export const parameters = {
   },
 };
 
-// addDecorator((story) => <Center>{story()}</Center>);
+/* Version 5.3 way of using decorator for theming */
+/* addDecorator((story) => (
+  <ThemeProvider>
+    <CSSReset />
+    <Box m="4">{story()}</Box>
+  </ThemeProvider>
+)); */
 
+//Version 6.2 way of using decorator for theming
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
