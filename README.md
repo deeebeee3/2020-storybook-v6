@@ -24,3 +24,6 @@ yarn add -D @storybook/addon-docs
 
 Viewport addon:
 yarn add -D @storybook/addon-viewport
+
+Accessibility addon:
+yarn add -D @storybook/addon-a11y

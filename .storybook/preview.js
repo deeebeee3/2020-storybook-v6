@@ -5,6 +5,7 @@ import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/core";
 import { withConsole } from "@storybook/addon-console";
 import { withKnobs } from "@storybook/addon-knobs";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
+import { withA11y } from "@storybook/addon-a11y";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -39,6 +40,7 @@ export const decorators = [
 ];
 
 addDecorator(withKnobs);
+addDecorator(withA11y);
 
 addParameters({
   viewport: {
