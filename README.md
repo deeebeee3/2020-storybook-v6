@@ -18,3 +18,6 @@ yarn add @chakra-ui/core @emotion/core @emotion/styled emotion-theming
 
 Console addon:
 yarn add -D @storybook/addon-console
+
+Docs addon:
+yarn add -D @storybook/addon-docs
