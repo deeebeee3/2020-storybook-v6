@@ -3,6 +3,7 @@ import { addDecorator } from "@storybook/react";
 import Center from "../src/components/Center/Center";
 import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/core";
 import { withConsole } from "@storybook/addon-console";
+import { withKnobs } from "@storybook/addon-knobs";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -35,3 +36,5 @@ export const decorators = [
   (Story) => <Center>{Story()}</Center>,
   (Story, context) => withConsole()(Story)(context),
 ];
+
+addDecorator(withKnobs);
